@@ -1,0 +1,11 @@
+<template>
+  <div>
+    <AppHeader />
+    <AppHero />
+    <SectionTwo />
+  </div>
+</template>
+
+<script setup lang="ts"></script>
+
+<style scoped></style>
