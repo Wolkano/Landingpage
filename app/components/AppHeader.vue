@@ -1,6 +1,6 @@
 <template>
   <UHeader
-    title="ByggProffs Skåne"
+    title="Byggproffs Skåne"
     class="border-none flex flex-wrap flex-row"
     :ui="{
       title: 'font-semibold text-3xl',

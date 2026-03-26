@@ -3,14 +3,15 @@
     class="w-full bg-[url('/hero-image.png')] bg-no-repeat bg-cover bg-bottom"
   >
     <u-page-hero
-      headline="PROFESSIONELL DRÄNERING"
-      title="Säkra din grund för framtiden"
-      description="Vi utför markarbete och dränering med kirurgisk precision i hela Skåne. Skydda ditt hem mot fuktskador med vår certifierade expertis."
+      headline="SKYDDA DITT HEM MOT FUKTSKADOR"
+      title="Vänta inte före länge med dräneringen"
+      description="Vi utför markarbete och dränering med kirurgisk precision i hela Skåne. Boka in ett kostnadsfritt platsbesök idag!"
       :links="links"
       orientation="horizontal"
       class="bg-[rgba(255,255,255,0.5)] w-full"
       :ui="{
-        headline: 'font-semibold text-primary-600',
+        headline: 'font-bold text-primary-600',
+        description: 'font-semibold',
         links: 'heroBtns',
       }"
       ><div>
@@ -25,6 +26,7 @@
               variant="ghost"
               size="xl"
               class="w-full border-b border-neutral-600"
+              autocomplete="name"
             />
           </u-form-field>
           <u-form-field label="E-POST">
@@ -34,6 +36,7 @@
               variant="ghost"
               size="xl"
               class="w-full border-b border-neutral-600"
+              autocomplete="email"
             />
           </u-form-field>
           <u-form-field label="TELEFONNUMMER">
@@ -43,6 +46,37 @@
               variant="ghost"
               size="xl"
               class="w-full border-b border-neutral-600"
+              autocomplete="tel"
+            />
+          </u-form-field>
+          <u-form-field label="Gatuadress">
+            <u-input
+              label="Gatuadress"
+              placeholder="Storgatan 1"
+              variant="ghost"
+              size="xl"
+              class="w-full border-b border-neutral-600"
+              autocomplete="street-address"
+            />
+          </u-form-field>
+          <u-form-field label="Postnummer">
+            <u-input
+              label="Postnummer"
+              placeholder="201 45"
+              variant="ghost"
+              size="xl"
+              class="w-full border-b border-neutral-600"
+              autocomplete="postal-code"
+            />
+          </u-form-field>
+          <u-form-field label="Stad">
+            <u-input
+              label="Stad"
+              placeholder="Malmö"
+              variant="ghost"
+              size="xl"
+              class="w-full border-b border-neutral-600"
+              autocomplete="address-level2"
             />
           </u-form-field>
           <UButton
@@ -50,7 +84,7 @@
             class="flex justify-center gradient-btn py-4 text-2xl"
           />
           <p class="w-full text-center text-sm">
-            Vi återkommer till dig inom 24 timmar på arbetsdagar
+            Vi återkommer till dig inom 24 timmar. Din information behandlas konfidentiellt och används endast för att ge dig en offert.
           </p>
         </UForm>
       </div></u-page-hero
@@ -61,12 +95,12 @@
 <script setup lang="ts">
 const links = [
   {
-    label: "10 ÅRS GARANTI",
+    label: "KOSTNADSFRI OFFERT",
     icon: "ph:seal-check-fill",
     variant: "link",
   },
   {
-    label: "CERFTIFIERADE PERSONAL",
+    label: "ARBETE TILL FASTPRIS",
     icon: "mdi:worker",
     variant: "link",
   },

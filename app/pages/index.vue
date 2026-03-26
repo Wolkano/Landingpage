@@ -3,6 +3,7 @@
     <AppHeader />
     <AppHero />
     <SectionTwo />
+    <SectionTestimonials />
     <SectionThree />
   </div>
 </template>

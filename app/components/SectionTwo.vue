@@ -3,11 +3,8 @@
     <div
       class="bg-neutral-500 flex flex-row flex-wrap justify-around h-20 items-center w-full"
     >
-      <div class="bannerItem">TRYGG-HANSA</div>
-      <div class="bannerItem">ISODRÄN CERTIFIERAD</div>
-      <div class="bannerItem">VÅTRUMSBEHÖRIG</div>
-      <div class="bannerItem">IDO6</div>
-      <div class="bannerItem">SÄKER VATTEN</div>
+      <div class="bannerItem">STÖRST I NV SKÅNE</div>
+      <div class="bannerItem">VI ÄR VAD VI HETER</div>
     </div>
     <u-page-hero
       headline="VARFÖR VÄLJA OSS"
@@ -25,8 +22,8 @@
     >
       <div class="w-full col-span-2">
         <UPageCard
-          title="Grundlig Grundundersökning"
-          description="Vi gissar aldrig. Varje projekt inleds med en teknisk analys av markförhållanden och befinrlig kontruktion för att säkerställa rätt metodval"
+          title="En offert du kan lita på"
+          description="Vi gissar aldrig. Efter vårt platsbesök får ni en utförlig offert som visualiserar hela processen och alla ingående moment. Inga överraskningar, bara trygghet."
           icon="material-symbols:house-outline"
           variant="soft"
         >
@@ -37,14 +34,14 @@
       </div>
       <div class="flex flex-col gap-6 h-full w-full">
         <UPageCard
-          title="Totalentreprenad"
-          description="Vi sköter allt från grävning och isolering till återställning av din tomt. En kontaktperson hela vägen."
+          title="Arbete till fastpris"
+          description="Vi sköter allt från grävning och isolering till återställning av din tomt. Ni har en dedikerad kontaktperson hela vägen."
           icon="clarity:contract-line"
           class="h-full w-full"
           variant="soft"
         /><UPageCard
-          title="Modern Maskinpark"
-          description="Vi använder kompakta, skonsamma maskiner som minimerar påverkan på din trädgård och omgivning."
+          title="Är ni nöjda, är vi nöjda"
+          description="Vi är inte klara förrän du är det. Vårt team stannar kvar tills du är helt nöjd med resultatet."
           icon="streamline-ultimate:factory-industrial-robot-arm-1"
           class="h-full w-full"
           variant="soft"
