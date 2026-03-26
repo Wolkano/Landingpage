@@ -6,6 +6,7 @@
     <SectionTestimonials />
     <CalendarBooking />
     <SectionThree />
+    <SliderComp/>
   </div>
 </template>
 
