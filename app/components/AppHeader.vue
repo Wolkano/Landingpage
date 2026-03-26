@@ -9,6 +9,8 @@
     <template #right>
       <UButton leading-icon="gg:phone" label="Ring oss nu" variant="link" />
       <UButton label="Boka Hembesök" />
+      <UButton label="RÄKNA UT OFFERT" variant="outline" href="pages/calc.vue"/>
+      <UButton label="Startsida" variant="outline" href="pages/index.vue"/>
     </template>
   </UHeader>
 </template>
