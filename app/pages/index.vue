@@ -5,8 +5,8 @@
     <SectionTwo />
     <SectionTestimonials />
     <CalendarBooking />
-    <SectionThree />
-    <SliderComp/>
+
+    <SliderComp />
   </div>
 </template>
 
