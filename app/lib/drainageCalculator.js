@@ -142,7 +142,7 @@ export function buildBaseRows(input, idCounter) {
   return [
     r('maskinflytt',        1,                                    { category: CATEGORIES.ETABLERING   }),
     r('framkorning',        CONSTANTS.DEFAULT_FRAMKORNING,        { category: CATEGORIES.ETABLERING   }),
-    r('gravning',           length,                               { category: CATEGORIES.SCHAKT        }),
+    r('gravning',           length,                               { category: CATEGORIES.SCHAKT       }),
     r('forbehandling',      wallArea,                             { category: CATEGORIES.DRANERING    }),
     r('dranringsror',       length,                               { category: CATEGORIES.DRANERING    }),
     r('inspektionsror',     CONSTANTS.DEFAULT_INSPEKTIONSROR,     { category: CATEGORIES.DRANERING    }),
