@@ -43,8 +43,8 @@ export const PRICE_LIST = {
 
 export const CONSTANTS = {
   // Schaktgeometri
-  TRENCH_WIDTH_M: 0.8,       // antagen schaktbredd i meter
-  M3_PER_CONTAINER: 14,      // m³ schaktmassor per container (14 m³ ≈ standard 10-tons container)
+  TRENCH_WIDTH_M: 0.9,       // antagen schaktbredd i meter
+  M3_PER_CONTAINER: 16,      // m³ schaktmassor per container (16 m³ ≈ standard 10-tons container)
 
   // Isolering – faktorer relativt grundmur-arean (length × depth)
   // Verifierat mot kalkylblad: 35m × 2.14m = 75 m² grundmur →
@@ -59,7 +59,7 @@ export const CONSTANTS = {
   FINPLANERING_FACTOR:   2.5,  // m² per löpmeter (arbetsyta runt schaktet)
   BARLAGER_TON_PER_M2:   0.32, // ton bärlager per m² finplanering
 
-  // Standardantal – justeras per projekt vid behov. ARRAY för Framkörning??
+  // Standardantal – justeras per projekt vid behov. ARRAY för Framkörning?? Inställningar i QuoteEditor?
   DEFAULT_FRAMKORNING:          10,
   DEFAULT_INSPEKTIONSROR:        2,
   DEFAULT_BOJAR:                 4,
@@ -165,7 +165,7 @@ export function buildBaseRows(input, idCounter) {
  */
 export function applyExcavationRemovalRule(input, idCounter) {
   const { depth, length, removeExcavatedMass } = input
-  const volume     = length * depth * CONSTANTS.TRENCH_WIDTH_M
+  const volume = (depth + 0.1) * length * CONSTANTS.TRENCH_WIDTH_M;
   const containers = Math.ceil(volume / CONSTANTS.M3_PER_CONTAINER)
   const qty        = removeExcavatedMass ? containers : 0
 
