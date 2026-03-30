@@ -25,11 +25,11 @@
         <thead class="sticky top-0 z-10 bg-neutral-100 border-b border-neutral-200">
           <tr>
             <th class="w-8 px-2 py-2"></th>
-            <th class="text-left px-3 py-2 font-medium text-neutral-500 text-xs uppercase tracking-wide">Aktivitet</th>
-            <th class="text-right px-2 py-2 font-medium text-neutral-500 text-xs uppercase tracking-wide w-20">Antal</th>
-            <th class="text-center px-2 py-2 font-medium text-neutral-500 text-xs uppercase tracking-wide w-12">Enhet</th>
-            <th class="text-right px-2 py-2 font-medium text-neutral-500 text-xs uppercase tracking-wide w-24">À-pris</th>
-            <th class="text-right px-3 py-2 font-medium text-neutral-500 text-xs uppercase tracking-wide w-28">Kostnad</th>
+            <th class="text-left px-3 py-2 font-medium text-neutral-800 text-xs uppercase tracking-wide">Aktivitet</th>
+            <th class="text-right px-2 py-2 font-medium text-neutral-800 text-xs uppercase tracking-wide w-20">Antal</th>
+            <th class="text-center px-2 py-2 font-medium text-neutral-800 text-xs uppercase tracking-wide w-12">Enhet</th>
+            <th class="text-right px-2 py-2 font-medium text-neutral-800 text-xs uppercase tracking-wide w-24">À-pris</th>
+            <th class="text-right px-3 py-2 font-medium text-neutral-800 text-xs uppercase tracking-wide w-28">Kostnad</th>
           </tr>
         </thead>
         <tbody>
@@ -62,7 +62,15 @@
 
               <!-- Titel -->
               <td class="px-3 py-2 text-neutral-700 leading-snug">
-                {{ row.title }}
+                <input
+                  v-if="row.editable"
+                  type="text"
+                  v-model="row.title"
+                  :disabled="!row.enabled"
+                  class="w-full border border-neutral-200 rounded px-1.5 py-0.5 text-sm focus:outline-none focus:border-slateSecondary-500 disabled:bg-transparent disabled:border-transparent disabled:text-neutral-600"
+                  placeholder="Fyll i beskrivning"
+                />
+                <span v-else>{{ row.title }}</span>
               </td>
 
               <!-- Antal -->
@@ -79,8 +87,16 @@
               </td>
 
               <!-- Enhet -->
-              <td class="px-2 py-2 text-center text-neutral-600 text-xs">
-                {{ row.unit }}
+              <td class="px-2 py-2 text-center text-neutral-800 text-xs">
+                <select
+                  v-if="row.editable"
+                  v-model="row.unit"
+                  :disabled="!row.enabled"
+                  class="border border-neutral-200 rounded px-1 py-0.5 text-xs focus:outline-none focus:border-slateSecondary-500 disabled:bg-transparent disabled:border-transparent disabled:text-neutral-600"
+                >
+                  <option v-for="u in unitOptions" :key="u" :value="u">{{ u }}</option>
+                </select>
+                <span v-else>{{ row.unit }}</span>
               </td>
 
               <!-- À-pris -->
@@ -184,6 +200,9 @@ const rowsByCategory = computed(() => {
   }
   return map
 })
+
+// ── Enhetsalternativ för fri rad ─────────────────────────────────────────────
+const unitOptions = ['st', 'm', 'm²', 'm³', 'ton', 'tim', 'pkt','rl']
 
 // ── Lägg till fri rad ────────────────────────────────────────────────────────
 // Emittas uppåt till föräldern som äger quoteRows-arrayen.
