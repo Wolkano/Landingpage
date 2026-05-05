@@ -84,7 +84,7 @@
             class="flex justify-center gradient-btn py-4 text-2xl"
           />
           <p class="w-full text-center text-sm">
-            Vi återkommer till dig inom 24 timmar. Din information behandlas konfidentiellt och används endast för att ge dig en offert.
+            Vi återkommer till dig inom 12 timmar. Din information behandlas konfidentiellt och används endast för att ge dig en offert.
           </p>
         </UForm>
       </div></u-page-hero

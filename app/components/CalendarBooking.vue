@@ -60,7 +60,7 @@
         </div>
 
         <!-- Calendar embed -->
-        <div class="flex-1 w-full min-h-[600px] border border-neutral-200 shadow-sm overflow-hidden">
+        <div class="flex-1 w-full min-h-150 border border-neutral-200 shadow-sm overflow-hidden">
           <iframe
             src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ008z0cl51NZoJBTojWcHWWi5JGx5EN64GAOKkgkDUKIo1GwNof9pBynL9_ulHBS2MSvPuLP24F?gv=true"
             width="100%"

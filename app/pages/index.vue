@@ -3,10 +3,9 @@
     <AppHeader />
     <AppHero />
     <SectionTwo />
+    <Samarbetspartners />
     <SectionTestimonials />
     <CalendarBooking />
-
-    <SliderComp />
   </div>
 </template>
 

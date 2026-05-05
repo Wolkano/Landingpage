@@ -1,14 +1,14 @@
 <template>
   <div class="w-full pb-10">
     <div
-      class="bg-neutral-500 flex flex-row flex-wrap justify-around h-20 items-center w-full"
+      class="bg-slatePrimary-300 flex flex-row flex-wrap justify-around h-20 items-center w-full"
     >
       <div class="bannerItem">STÖRST I NV SKÅNE</div>
       <div class="bannerItem">VI ÄR VAD VI HETER</div>
     </div>
     <u-page-hero
-      headline="VARFÖR VÄLJA OSS"
-      title="Byggd på förtroende och precision."
+      headline="VÅRT UPPDRAG"
+      title="Skapa trygga och hållbara hem i Skåne"
       orientation="horizontal"
       class="w-full"
       :ui="{
@@ -23,19 +23,19 @@
       <div class="w-full col-span-2">
         <UPageCard
           title="En offert du kan lita på"
-          description="Vi gissar aldrig. Efter vårt platsbesök får ni en utförlig offert som visualiserar hela processen och alla ingående moment. Inga överraskningar, bara trygghet."
+          description="Vi gissar inte. Efter vårt platsbesök får ni en utförlig offert som visualiserar hela processen och alla ingående moment. Inga överraskningar, bara trygghet."
           icon="material-symbols:house-outline"
           variant="soft"
         >
           <div class="h-[50%]">
-            <img src="/hero-image.png" />
+            <img src="/offer.webp" />
           </div>
         </UPageCard>
       </div>
       <div class="flex flex-col gap-6 h-full w-full">
         <UPageCard
           title="Arbete till fastpris"
-          description="Vi sköter allt från grävning och isolering till återställning av din tomt. Ni har en dedikerad kontaktperson hela vägen."
+          description="Inga överraskningar. Vi tar hand om allt från början till slut. Ni har en dedikerad projektledare hela vägen."
           icon="clarity:contract-line"
           class="h-full w-full"
           variant="soft"

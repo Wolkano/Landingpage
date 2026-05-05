@@ -37,8 +37,8 @@
 
 <script setup lang="ts">
 const stats = [
-  { value: "999+", label: "Genomförda projekt" },
-  { value: "20+", label: "Års erfarenhet" },
+  { value: "1250+", label: "Genomförda projekt" },
+  { value: "40+", label: "Års erfarenhet" },
   { value: "100%", label: "Nöjda kunder" },
 ];
 
