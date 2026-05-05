@@ -1,6 +1,6 @@
 <template>
   <div class="w-full bg-neutral-100">
-    <div class="bg-neutral-700 w-full">
+    <div class="bg-neutral-900 w-full">
       <div class="lg:w-[60%] mx-auto px-6 py-6 flex flex-col md:flex-row justify-around items-center gap-6 md:gap-0">
         <div v-for="stat in stats" :key="stat.value" class="flex flex-col items-center text-white">
           <span class="text-3xl font-bold text-primary-400">{{ stat.value }}</span>
