@@ -48,7 +48,7 @@
       </div>
     </div>
   </div>
-
+<div class="w-full bg-neutral-2000 flex flex-col items-center gap-6 py-10">
         <UForm
           class="bg-neutral-200 flex flex-col gap-4 p-6 shadow-md border-b-3 border-primary-600"
         >
@@ -121,6 +121,7 @@
             Vi återkommer till dig inom 12 timmar. Din information behandlas konfidentiellt och används endast för att ge dig en offert.
           </p>
         </UForm>
+        </div>
 </template>
 
 <script setup lang="ts"></script>
