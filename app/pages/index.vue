@@ -6,9 +6,13 @@
     <Samarbetspartners />
     <SectionTestimonials />
     <CalendarBooking />
+    <CallToActionTwo />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CallToActionTwo from '~/components/CallToActionTwo.vue';
+
+</script>
 
 <style scoped></style>

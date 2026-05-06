@@ -163,12 +163,12 @@ label {
 .heroBtns button {
     
   [data-slot="leadingIcon"] {
-    color: var(--color-primary-600);
+    color: var(--color-primary-400);
 
   }
 
   [data-slot="label"] {
-    color: black;
+    color: whitesmoke;
   }
   &:hover {
      opacity: 100%;
@@ -191,6 +191,8 @@ label {
   
   &:hover::after {
     opacity: 1;
+	background: linear-gradient(to bottom, var(--color-primary-700), var(--color-primary-500));
+
 
   }
   

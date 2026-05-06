@@ -1,10 +1,10 @@
 <template>
   <div class="w-full pb-10">
     <div
-      class="bg-slatePrimary-300 flex flex-row flex-wrap justify-around h-20 items-center w-full"
+      class="bg-neutral-900 flex flex-row flex-wrap justify-around h-20 items-center w-full"
     >
-      <div class="bannerItem">STÖRST I NV SKÅNE</div>
-      <div class="bannerItem">VI ÄR VAD VI HETER</div>
+      <div class="bannerItem text-amber-50">STÖRST I NV SKÅNE</div>
+      <div class="bannerItem text-amber-50">VI ÄR VAD VI HETER</div>
     </div>
     <u-page-hero
       headline="VÅRT UPPDRAG"

@@ -18,15 +18,15 @@
 
 <script setup lang="ts">
 const partners = [
-  { id: 1, name: "STAVAB",     tagline: "VA Grossist", color: "#b72530", href: "https://example.com" },
-  { id: 2, name: "Derome",     tagline: "Byggvaror", color: "#005c46", href: "https://example.com" },
-  { id: 3, name: "Wangeskogs", tagline: "Maskinutrustning", color: "#fea268", href: "https://example.com" },
-  { id: 4, name: "Ahlsell",    tagline: "Leverantör", color: "#003087", href: "https://example.com" },
-  { id: 5, name: "OptiDrain",  tagline: "Leverantör", color: "#004b87", href: "https://example.com" },
-  { id: 6, name: "STO",        tagline: "Fasadsystem", color: "#ffd700", href: "https://example.com" },
-  { id: 7, name: "Cramo AB",   tagline: "Leverantör", color: "#da000b", href: "https://example.com" },
-  { id: 8, name: "Isodrän®",   tagline: "Dräneringstillverkare", color: "#709c40", href: "https://example.com" },
-  { id: 9, name: "HILTI",      tagline: "Maskinutrustning", color: "#d2041e", href: "https://example.com" },
+  { id: 1, name: "STAVAB",     tagline: "VA Grossist", color: "#b72530", href: "https://stavab.se/" },
+  { id: 2, name: "Derome",     tagline: "Byggvaror", color: "#005c46", href: "https://www.derome.se/" },
+  { id: 3, name: "Wangeskogs", tagline: "Maskinutrustning", color: "#fea268", href: "https://wangeskog.se/" },
+  { id: 4, name: "Ahlsell",    tagline: "Leverantör", color: "#003087", href: "https://www.ahlsell.se/" },
+  { id: 5, name: "OptiDrain",  tagline: "Leverantör", color: "#004b87", href: "https://fuktsparrteknik.se/utvandig-kallarvagg/optidrain/" },
+  { id: 6, name: "STO",        tagline: "Fasadsystem", color: "#ffd700", href: "https://www.sto.se/s/" },
+  { id: 7, name: "Cramo AB",   tagline: "Leverantör", color: "#da000b", href: "https://www.cramo.se/sv" },
+  { id: 8, name: "Isodrän®",   tagline: "Dräneringstillverkare", color: "#709c40", href: "https://www.isodran.se/" },
+  { id: 9, name: "HILTI",      tagline: "Maskinutrustning", color: "#d2041e", href: "https://www.hilti.se/" },
   { id: 9, name: "Wolkano",      tagline: "Systemutveckling", color: "#da8b00", href: "https://wolkano.se" },
 ]
 </script>

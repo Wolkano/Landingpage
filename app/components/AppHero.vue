@@ -3,15 +3,16 @@
     class="w-full bg-[url('/hero-image.png')] bg-no-repeat bg-cover bg-bottom"
   >
     <u-page-hero
-      headline="SKYDDA DITT HEM MOT FUKTSKADOR"
-      title="Vänta inte före länge med dräneringen"
+      headline="HAR DU FUKT I KÄLLAREN?"
+      title="Vi hjälper dig med trygg dränering i hela Skåne"
       description="Vi utför markarbete och dränering med kirurgisk precision i hela Skåne. Boka in ett kostnadsfritt platsbesök idag!"
       :links="links"
       orientation="horizontal"
-      class="bg-[rgba(255,255,255,0.5)] w-full"
+      class="bg-[rgba(0,0,0,0.5)] w-full"
       :ui="{
-        headline: 'font-bold text-primary-600',
-        description: 'font-semibold',
+        headline: 'font-bold text-primary-200',
+        title: 'font-bold text-4xl text-white',
+        description: 'font-semibold text-white/50',
         links: 'heroBtns',
       }"
       ><div>
