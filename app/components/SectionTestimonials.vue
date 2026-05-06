@@ -15,7 +15,7 @@
         <div
           v-for="testimonial in testimonials"
           :key="testimonial.name"
-          class="bg-white shadow-sm border-b-3 border-primary-600 p-6 flex flex-col gap-4"
+          class="bg-white shadow-sm border-b-3 border-primary-600 p-6 flex flex-col gap-4 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 hover:border-b-4 cursor-default"
         >
           <p class="text-neutral-700 text-sm leading-relaxed flex-1">"{{ testimonial.description }}"</p>
           <div class="flex items-center gap-3 pt-2 border-t border-neutral-200">

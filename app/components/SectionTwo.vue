@@ -8,15 +8,27 @@
     </div>
     <u-page-hero
       headline="VÅRT UPPDRAG"
-      title="Skapa trygga och hållbara hem i Skåne"
       orientation="horizontal"
       class="w-full"
       :ui="{
-        title: 'w-full',
-        container: 'flex! flex-col! py-10! h-fit! gap-0! ',
+        container: 'flex! flex-col! py-10! h-fit! gap-0!',
         root: 'h-fit!',
       }"
-    />
+    >
+      <template #title>
+        <span ref="titleRef" class="title-words">
+          <span
+            v-for="(word, i) in titleWords"
+            :key="i"
+            class="word-outer"
+          ><span
+            class="word-inner"
+            :class="{ 'word-visible': isVisible }"
+            :style="{ transitionDelay: isVisible ? `${i * 75}ms` : '0ms' }"
+          >{{ word }}</span></span>
+        </span>
+      </template>
+    </u-page-hero>
     <div
       class="grid grid-cols-1 lg:w-[60%] lg:grid-cols-3 lg:mx-auto gap-6 mx-6"
     >
@@ -27,8 +39,14 @@
           icon="material-symbols:house-outline"
           variant="soft"
         >
-          <div class="h-[50%]">
-            <img src="/offer.webp" />
+          <div class="w-full overflow-hidden rounded-lg">
+            <NuxtImg
+              src="/offer.webp"
+              sizes="100vw md:50vw lg:40vw"
+              class="w-full h-48 sm:h-56 md:h-64 object-cover"
+              loading="lazy"
+              alt="Offert visualisering"
+            />
           </div>
         </UPageCard>
       </div>
@@ -49,12 +67,56 @@
       </div>
     </div>
   </div>
+  <iframe src="https://widget.reco.se/v2/venues/4002878/horizontal/xlarge?inverted=false&border=true&lang=sv" title="Byggproffs Skåne AB - Omdömen på Reco" height="225" style="width:100%;border:0;display:block;overflow:hidden;" data-reactroot></iframe>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const titleWords = 'Skapa trygga och hållbara hem i Skåne'.split(' ')
+const titleRef = ref<HTMLElement | null>(null)
+const isVisible = ref(false)
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        isVisible.value = true
+        observer.disconnect()
+      }
+    },
+    { threshold: 0.4 }
+  )
+  if (titleRef.value) observer.observe(titleRef.value)
+})
+</script>
 
 <style scoped>
 .bannerItem {
   font-weight: 700;
+}
+
+.title-words {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0 0.3em;
+}
+
+.word-outer {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.word-inner {
+  display: inline-block;
+  transform: translateY(110%);
+  opacity: 0;
+  transition:
+    transform 0.65s cubic-bezier(0.16, 1, 0.3, 1),
+    opacity 0.5s ease;
+}
+
+.word-visible {
+  transform: translateY(0);
+  opacity: 1;
 }
 </style>

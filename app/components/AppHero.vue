@@ -4,18 +4,27 @@
   >
     <u-page-hero
       headline="HAR DU FUKT I KÄLLAREN?"
-      title="Vi hjälper dig med trygg dränering i hela Skåne"
       description="Vi utför markarbete och dränering med kirurgisk precision i hela Skåne. Boka in ett kostnadsfritt platsbesök idag!"
       :links="links"
       orientation="horizontal"
       class="bg-[rgba(0,0,0,0.5)] w-full"
       :ui="{
         headline: 'font-bold text-primary-200',
-        title: 'font-bold text-4xl text-white',
+        title: 'font-bold text-6xl text-white',
         description: 'font-semibold text-white/50',
         links: 'heroBtns',
       }"
-      ><div>
+    >
+      <template #title>
+        <span class="font-bold text-6xl text-white leading-snug">
+          Vi hjälper dig med trygg
+          <span class="relative inline-block px-1">
+            <span class="relative z-10">dränering i hela Skåne</span>
+            <span class="highlight-bg absolute inset-0 bg-primary-600 rounded-sm -z-10"></span>
+          </span>
+        </span>
+      </template>
+      <div>
         <UForm
           class="bg-neutral-200 flex flex-col gap-4 p-6 shadow-md border-b-3 border-primary-600"
         >
@@ -108,4 +117,14 @@ const links = [
 ];
 </script>
 
-<style scoped></style>
+<style scoped>
+@keyframes highlight-in {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.highlight-bg {
+  transform-origin: left;
+  animation: highlight-in 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.4s both;
+}
+</style>
