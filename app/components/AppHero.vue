@@ -25,9 +25,7 @@
         </span>
       </template>
       <div>
-        <UForm
-          class="bg-neutral-200 flex flex-col gap-4 p-6 shadow-md border-b-3 border-primary-600"
-        >
+        <UForm name="offert-form" netlify class="bg-neutral-200 flex flex-col gap-4 p-6 shadow-md border-b-3 border-primary-600">
           <h2 class="font-semibold text-2xl">Få en kostnadsfri offert</h2>
           <u-form-field label="DITT NAMN">
             <u-input
@@ -37,6 +35,7 @@
               size="xl"
               class="w-full border-b border-neutral-600"
               autocomplete="name"
+              name="Namn"
             />
           </u-form-field>
           <u-form-field label="E-POST">
@@ -47,6 +46,7 @@
               size="xl"
               class="w-full border-b border-neutral-600"
               autocomplete="email"
+              name="E-post"
             />
           </u-form-field>
           <u-form-field label="TELEFONNUMMER">
@@ -57,6 +57,7 @@
               size="xl"
               class="w-full border-b border-neutral-600"
               autocomplete="tel"
+              name="Telefon"
             />
           </u-form-field>
           <u-form-field label="Gatuadress">
@@ -67,6 +68,7 @@
               size="xl"
               class="w-full border-b border-neutral-600"
               autocomplete="street-address"
+              name="Gatuadress"
             />
           </u-form-field>
           <u-form-field label="Postnummer">
@@ -77,6 +79,7 @@
               size="xl"
               class="w-full border-b border-neutral-600"
               autocomplete="postal-code"
+              name="Postnummer"
             />
           </u-form-field>
           <u-form-field label="Stad">
@@ -87,11 +90,13 @@
               size="xl"
               class="w-full border-b border-neutral-600"
               autocomplete="address-level2"
+              name="Stad"
             />
           </u-form-field>
           <UButton
             label="SKICKA FÖRFRÅGAN"
             class="flex justify-center gradient-btn py-4 text-2xl"
+            type="submit"
           />
           <p class="w-full text-center text-sm">
             Vi återkommer till dig inom 12 timmar. Din information behandlas konfidentiellt och används endast för att ge dig en offert.
