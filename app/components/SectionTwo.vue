@@ -67,7 +67,6 @@
       </div>
     </div>
   </div>
-  <iframe src="https://widget.reco.se/v2/venues/4002878/horizontal/xlarge?inverted=false&border=true&lang=sv" title="Byggproffs Skåne AB - Omdömen på Reco" height="225" style="width:100%;border:0;display:block;overflow:hidden;" data-reactroot></iframe>
 </template>
 
 <script setup lang="ts">
