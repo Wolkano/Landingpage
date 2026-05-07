@@ -25,7 +25,7 @@
         </span>
       </template>
       <div>
-        <UForm name="offert-form" netlify class="bg-neutral-200 flex flex-col gap-4 p-6 shadow-md border-b-3 border-primary-600">
+        <UForm name="offert-form" data-netlify="true" method="post" class="bg-neutral-200 flex flex-col gap-4 p-6 shadow-md border-b-3 border-primary-600">
           <h2 class="font-semibold text-2xl">Få en kostnadsfri offert</h2>
           <u-form-field label="DITT NAMN">
             <u-input
